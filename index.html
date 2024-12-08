@@ -4,77 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mi</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <h1>¡Bienvenido a mi página!</h1>
-    <h2>Sobre mí</h2>
-    <p>Hola, mi nombre es Andres. Soy una persona apasionada por aprender cosas nuevas y actualmente estoy trabajando en mejorar mis habilidades en desarrollo web.</p>
-    <p>A continuación, encontrarás información sobre mis pasatiempos, tareas y cómo puedes contactarme.</p>
-    
-    <!-- Imagen y enlaces -->
-    <h2>Mi Foto</h2>
-    <img src="/WhatsApp Image 2024-08-17 at 3.09.24 PM.jpeg" alt="mi foto" width="300">
-    <h2>Mis Redes Sociales</h2>
-    <ul>
-        <li><a href="https://www.facebook.com/andres.riverapaba" target="_blank">Facebook</a></li>
-        <li><a href="https://x.com/Andresripab" target="_blank">Twitter</a></li>
-        <li><a href="https://www.instagram.com/andres_rivera01/" target="_blank">instagram</a></li>
-    </ul>
+    <header>
+        <h1 id="titulo-principal">¡Bienvenido a mi página personal!</h1>
+    </header>
 
-    <!-- Listas -->
-    <h2>Mis Pasatiempos</h2>
-    <ul>
-        <li>Leer libros de tecnología</li>
-        <li>Ver series de ciencia ficción</li>
-        <li>Explorar nuevas recetas de cocina</li>
-    </ul>
-    
-    <h2>Mis Tareas Pendientes</h2>
-    <ol>
-        <li>Hacer las compras del mercado</li>
-        <li>Estudiar programación</li>
-        <li>Limpiar el cuarto</li>
-    </ol>
-    
-    <!-- Tabla -->
-    <h2>Mi Horario Semanal</h2>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Día</th>
-                <th>Actividad</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Lunes</td>
-                <td>Estudiar programación</td>
-            </tr>
-            <tr>
-                <td>Miércoles</td>
-                <td>Hacer las compras del mercado</td>
-            </tr>
-            <tr>
-                <td>Viernes</td>
-                <td>Limpiar el cuarto</td>
-            </tr>
-        </tbody>
-    </table>
+    <main>
+        <section>
+            <h2 class="subtitulo">Sobre mí</h2>
+            <p class="descripcion">Hola, mi nombre es Andres. Soy una persona apasionada por aprender cosas nuevas y actualmente estoy trabajando en mejorar mis habilidades en desarrollo web. ¡Gracias por visitar mi página!</p>
+        </section>
 
-    <!-- Formulario -->
-    <h2>Contacto</h2>
-    <form action="#" method="post">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="reason">Razón del contacto:</label>
-        <input type="text" id="reason" name="reason" required><br><br>
-        
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <button type="submit">Enviar</button>
-    </form>
+        <section>
+            <h2 class="subtitulo">Mi foto</h2>
+            <img id="foto" src="/WhatsApp Image 2024-08-17 at 3.09.24 PM.jpeg" alt="mi foto" width="300">
+        </section>
+
+        <section>
+            <h2 class="subtitulo">Pasatiempos</h2>
+            <ul class="lista-pasatiempos">
+                <li>Leer libros de tecnología</li>
+                <li>Ver series de ciencia ficción</li>
+                <li>Explorar nuevas recetas de cocina</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="subtitulo">Mis tareas pendientes</h2>
+            <ol class="lista-tareas">
+                <li>Hacer las compras del mercado</li>
+                <li>Estudiar programación</li>
+                <li>Limpiar el cuarto</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2 class="subtitulo">Horario semanal</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Actividad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>Hacer ejercicios de programación</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>Actualizar mi perfil de LinkedIn</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>Planificar mi próxima semana</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2 class="subtitulo">Formulario de contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                <label for="razon">Razón de contacto:</label>
+                <input type="text" id="razon" name="razon" placeholder="Escribe el motivo" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer">© 2024 copirigh Andres</p>
+    </footer>
 </body>
 </html>
